@@ -1,0 +1,218 @@
+﻿[
+  {
+    "DealsCount": 3,
+    "HotKeyId": 25,
+    "Html": "Featured",
+    "Item": 1,
+    "Page": 1,
+    "Search": "featured",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 26,
+    "Html": "Summer",
+    "Item": 2,
+    "Page": 1,
+    "Search": "summer",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 27,
+    "Html": "NearMe",
+    "Item": 3,
+    "Page": 1,
+    "Search": "NearMe",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 28,
+    "Html": "Automotive",
+    "Item": 4,
+    "Page": 1,
+    "Search": "automotive",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 29,
+    "Html": "Beauty",
+    "Item": 5,
+    "Page": 1,
+    "Search": "beauty",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 30,
+    "Html": "Electronics",
+    "Item": 6,
+    "Page": 1,
+    "Search": "electronics",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 31,
+    "Html": "Entertainment",
+    "Item": 7,
+    "Page": 1,
+    "Search": "entertainment",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 32,
+    "Html": "Garden",
+    "Item": 8,
+    "Page": 1,
+    "Search": "garden",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 33,
+    "Html": "Groceries",
+    "Item": 9,
+    "Page": 1,
+    "Search": "grocer",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 1,
+    "HotKeyId": 34,
+    "Html": "Sports",
+    "Item": 10,
+    "Page": 1,
+    "Search": "sports",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 3,
+    "HotKeyId": 35,
+    "Html": "Restaurants",
+    "Item": 11,
+    "Page": 1,
+    "Search": "restaurants",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 36,
+    "Html": "Travel",
+    "Item": 12,
+    "Page": 1,
+    "Search": "travel",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 3,
+    "HotKeyId": 37,
+    "Html": "Featured",
+    "Item": 1,
+    "Page": 2,
+    "Search": "featured",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 38,
+    "Html": "Summer",
+    "Item": 2,
+    "Page": 2,
+    "Search": "summer",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 39,
+    "Html": "NearMe",
+    "Item": 3,
+    "Page": 2,
+    "Search": "NearMe",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 40,
+    "Html": "ChildCare",
+    "Item": 4,
+    "Page": 2,
+    "Search": "child care",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 41,
+    "Html": "Cleaning",
+    "Item": 5,
+    "Page": 2,
+    "Search": "cleaning",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 42,
+    "Html": "Clothing",
+    "Item": 6,
+    "Page": 2,
+    "Search": "clothing",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 1,
+    "HotKeyId": 43,
+    "Html": "Contractors",
+    "Item": 7,
+    "Page": 2,
+    "Search": "contractors",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 44,
+    "Html": "Education",
+    "Item": 8,
+    "Page": 2,
+    "Search": "education",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 45,
+    "Html": "Health",
+    "Item": 9,
+    "Page": 2,
+    "Search": "health",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 1,
+    "HotKeyId": 46,
+    "Html": "Law",
+    "Item": 10,
+    "Page": 2,
+    "Search": "law",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 47,
+    "Html": "PetCare",
+    "Item": 11,
+    "Page": 2,
+    "Search": "pet care",
+    "Section": "Listings"
+  },
+  {
+    "DealsCount": 0,
+    "HotKeyId": 48,
+    "Html": "RealEstate",
+    "Item": 12,
+    "Page": 2,
+    "Search": "real estate",
+    "Section": "Listings"
+  }
+]

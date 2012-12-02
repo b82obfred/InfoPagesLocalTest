@@ -3,14 +3,14 @@
 
     config: {
         model: 'Mobile.model.DealsResultsModel',
-        sorters: 'Name',
+        //sorters: 'Name',
 
         pageSize: 10,
-        autoLoad: true,
+        autoLoad: false,
 
         proxy: {
             type: 'ajax',
-            url: 'http://wcf.refinedlogic.com/wcfinfopages/service/DealsDataFeed/',
+            url: 'http://74.81.211.118/m.InfoPages/DesktopModules/WebApiInfoPagesLocal/API/InfoPagesLocal/DealsDataFeedGet',
 
             pageParam: 'page',
             limitParam: 'rpp',

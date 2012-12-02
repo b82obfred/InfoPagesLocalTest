@@ -1,26 +1,8 @@
-﻿Ext.define('Mobile.model.SearchTermsMatching', {
+﻿Ext.define('Mobile.model.Deals', {
     extend: 'Ext.data.Model',
 
     config: {
-        fields: ['Priority', 'Origin', 'SearchTerm'],
-        belongsTo: 'Mobile.model.DealsResultsModel'
-    }
-});
-
-Ext.define('Mobile.model.SearchTermsAll', {
-    extend: 'Ext.data.Model',
-
-    config: {
-        fields: ['Priority', 'Origin', 'SearchTerm'],
-        belongsTo: 'Mobile.model.DealsResultsModel'
-    }
-});
-
-Ext.define('Mobile.model.Deals', {
-    extend: 'Ext.data.Model',
-
-    config: {
-        fields: ['Deal', 'Image'],
+        fields: ['DealId', 'Deal', 'Image'],
         belongsTo: 'Mobile.model.DealsResultsModel'
     }
 });
@@ -48,14 +30,10 @@ Ext.define('Mobile.model.DealsResultsModel', {
         'ValueStatement',
         'RedeemEmail',
         'LocationsRollup',
-        'DealsCount',
-        'SearchTermsMatching',
-        'SearchTermsAll', 
+        'DealsCount', 
         'Deals', 
         'Menus'],
         associations: [
-            { type: 'hasMany', model: 'SearchTermsMatching', name: 'SearchTermsMatching' },
-            { type: 'hasMany', model: 'SearchTermsAll', name: 'SearchTermsAll' },
             { type: 'hasMany', model: 'Deals', name: 'Deals' },
             { type: 'hasMany', model: 'Menus', name: 'Menus' }
         ]
