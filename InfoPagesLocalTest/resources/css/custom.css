@@ -1,4 +1,19 @@
-﻿.x-html {
+﻿.yellow .x-badge {
+   background-color: #ffff00 !important;
+    background-image:-webkit-gradient(
+      linear,
+      50% 0%,
+      50% 100%,
+      color-stop(0%, #FFFF00),
+      color-stop(50%, #E5E500),
+      color-stop(51%, #E5E500),
+      color-stop(100%, #FFFF19)) !important;
+   color:#000;
+   width:30px;
+   height:30px;
+   font-size:10px;
+}
+.x-html {
     -webkit-user-select: auto;
     -webkit-touch-callout: inherit;
     line-height: 1.5;
@@ -118,6 +133,7 @@
     height:32px !important;
     width:32px !important;
 } 
+
  
 .List_Blank
 {    
@@ -156,7 +172,7 @@
 
 
 .manage-list .x-dataview-inner {
-    padding: 0.7em;
+    padding: 0.7em;    
 }
 
 .manage-list .manage-list-item {
@@ -173,7 +189,7 @@
     -webkit-border-bottom-left-radius: 0.35em;
     border-bottom-left-radius: 0.35em;
     -webkit-border-bottom-right-radius: 0.35em;
-    border-bottom-right-radius: 0.35em
+    border-bottom-right-radius: 0.35em;
 }
 .manage-list .x-mask + .manage-list-item {
     -webkit-border-top-left-radius: 0em;
@@ -189,14 +205,14 @@
     -webkit-border-radius: 0.35em;
     border-radius: 0.35em;
     width: 86px;
-    height: 30px
+    height: 30px;
 }
 
 .manage-list .manage-list-item .x-name 
 {
 	background-color:Transparent;
     border:0px;
-    padding: 0.35em
+    padding: 0.35em;
 }
 
 .ManageListItemView {

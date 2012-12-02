@@ -1,7 +1,4 @@
-
 @import 'sencha-touch/default/all';
-
-//@include pictos-iconmask('deals');
 
 @include sencha-tabbar-ui('customdeals', #1A5496, 'glossy', yellow);
 @include sencha-toolbar-ui('customdeals', #1A5496, 'glossy');
@@ -9,10 +6,6 @@
 
 @include sencha-tabbar-ui('customlistings', #643d87, 'glossy', yellow);
 @include sencha-toolbar-ui('customlistings', #643d87, 'glossy');
-
-
-@include sencha-tabbar-ui('customtest', #33CC33, 'glossy', yellow);
-@include sencha-toolbar-ui('customtest', #33CC33, 'glossy');
 
 
 // You may remove any of the following modules that you
