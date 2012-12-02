@@ -4,12 +4,12 @@ Ext.define('Mobile.view.ListingsSearch', {
     id: 'ListingsSearch',
 
     config: {
-        layout: { type: 'card' },
+        layout: { type: 'vbox', align: 'center' },
         items: [
             {
                 xtype: 'formpanel',
                 id: 'ListingsSearchFormPanel',
-                style: 'background-color:#1A5496;',
+                style: 'background-color:#643d87;',
                 height: '30px',
                 width: '99%',
 

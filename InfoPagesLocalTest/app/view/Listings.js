@@ -13,13 +13,53 @@
                 id: 'ListingsResults_Toolbar',
                 docked: 'top',
                 ui: 'customlistings',
-                title: 'Listings Search',
                 items: [
                     {
                         ui: 'back',
                         text: 'BACK ',
                         handler: function () {
-                            Ext.getCmp('Main').setActiveItem(0);
+                            //console.log('back:' + Ext.getCmp('ListingsPanels').getActiveItem().getId());
+                            if (Ext.getCmp('ListingsPanels').getActiveItem().getId() == 'ListingsDirectory')
+                            {
+                                Ext.getCmp('Main').setActiveItem(0);
+                                $.jStorage.set('search', null);
+                            }
+                            if (Ext.getCmp('ListingsPanels').getActiveItem().getId() == 'ListingsResults')
+                            {
+                                var record = Ext.create('Mobile.model.ListingsSearchModel', {
+                                    ListingsSearchField: null
+                                });
+
+                                Ext.getCmp('ListingsSearchFormPanel').setRecord(record);
+                                Ext.getCmp('ListingsSearchFormPanel').fireEvent('change');
+
+                                $.jStorage.set('search', null);
+
+                                Ext.getCmp('ListingsPanels').setActiveItem(0);
+                                Ext.getCmp('ListingsDetails').removeAt(0);
+                            }
+                            if (Ext.getCmp('ListingsPanels').getActiveItem().getId() == 'ListingsDetails')
+                            {
+                                Ext.getCmp('ListingsPanels').setActiveItem(1);
+                            }
+                        }
+                    },
+                    {
+                        xtype: 'spacer'
+                    },
+                    {
+                        xtype: 'image',
+                        cls: 'Toolbar_Logo'
+                    },
+                    {
+                        xtype: 'spacer'
+                    },
+                    {
+                        ui: 'forward',
+                        text: 'DEALS ',
+                        handler: function () {
+                            console.log('click');
+                            Ext.getCmp('Main').setActiveItem(1);
                         }
                     }
                 ]
@@ -27,12 +67,12 @@
             {
                 xtype: 'ListingsSearch',
                 id: 'ListingsSearch',
-                style: 'background-color:#1A5496;',
+                style: 'background-color:#643d87;',
                 height: '30px'
             },
             {
-                xtype: 'ListingsResults',
-                id: 'ListingsResults',
+                xtype: 'ListingsPanels',
+                id: 'ListingsPanels',
                 flex: 1
             }
         ]

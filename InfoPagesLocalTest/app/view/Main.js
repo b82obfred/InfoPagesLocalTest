@@ -19,16 +19,6 @@ Ext.define('Mobile.view.Main', {
                 flex: 1
             },
             {
-                xtype: 'Test',
-                id: 'Test',
-                flex: 1
-            },
-            {
-                xtype: 'Spatial',
-                id: 'Spatial',
-                flex: 1
-            },
-            {
                 xtype: 'Deals',
                 id: 'Deals',
                 flex: 1
@@ -40,4 +30,19 @@ Ext.define('Mobile.view.Main', {
             }
         ]
     }
-});
+    });
+
+    Ext.util.openLink = function (href) {
+
+        var link = document.createElement('a');
+        link.setAttribute('href', href);
+        link.setAttribute('target', '_blank');
+        var clickevent = document.createEvent('Event');
+        clickevent.initEvent('click', true, false);
+        link.dispatchEvent(clickevent);
+        return false;
+    }
+
+
+
+    

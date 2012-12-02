@@ -11,67 +11,31 @@
 
         items: [
             {
-                xtype: 'spacer'
-            },
-            {
-                xtype: 'button',
-                id: 'Home_Test',
-                ui: 'decline',
-                width: '80%',
-                flex: 1,
-                text: 'Test Search',
-                handler: function () {
-                    //console.log('click');
-                    Ext.getCmp('Main').setActiveItem(1);
-                }
-            },
-            {
-                xtype: 'spacer'
-            },
-            {
-                xtype: 'button',
-                id: 'Home_Spatial',
-                ui: 'decline',
-                width: '80%',
-                flex: 1,
-                text: 'Spatial Search',
-                handler: function () {
-                    //console.log('click');
-                    Ext.getCmp('Main').setActiveItem(2);
-                }
-            },
-            {
-                xtype: 'spacer'
+                xtype: 'image',
+                id: 'Home_Logo',
+                height: '100px',
+                width: '288px',
+                src: './resources/images/Home_Logo.png'
+
             },
             {
                 xtype: 'button',
                 id: 'Home_Deals',
-                ui: 'decline',
-                width: '80%',
-                flex: 1,
-                text: 'Deals Search',
+                cls: 'Home_Deals',
                 handler: function () {
                     //console.log('click');
-                    Ext.getCmp('Main').setActiveItem(3);
+                    Ext.getCmp('Main').setActiveItem(1);
+                    
                 }
-            },
-            {
-                xtype: 'spacer'
             },
             {
                 xtype: 'button',
                 id: 'Home_Listings',
-                ui: 'decline',
-                width: '80%',
-                flex: 1,
-                text: 'Listings Search',
+                cls: 'Home_Listings',
                 handler: function () {
                     //console.log('click');
-                    Ext.getCmp('Main').setActiveItem(4);
+                    Ext.getCmp('Main').setActiveItem(2);
                 }
-            },
-            {
-                xtype: 'spacer'
             }
 
         ]
