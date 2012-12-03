@@ -408,7 +408,7 @@ Ext.define('Mobile.view.ListingsResults', {
 
                         var linkurl = "http://maps.google.com/maps?q=" + record.data.Address;
 
-                        var locationLink = '<a href=\"' + linkurl + '\" target=\"blank\" ><img src=\"' + url + '\" /></a>';
+                        var locationLink = '<a href=\"' + linkurl + '\" target=\"_blank\" ><img src=\"' + url + '\" /></a>';
 
                         Ext.getCmp('DealsDetailsTabPanel_Locations_StaticMap').setHtml(locationLink);
 
