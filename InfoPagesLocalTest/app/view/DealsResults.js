@@ -168,6 +168,7 @@ Ext.define('Mobile.view.DealsResults', {
                             });
                         }
 
+                        
                         tabsArray.push(
                         {
                             xtype: 'container',
@@ -177,6 +178,16 @@ Ext.define('Mobile.view.DealsResults', {
                             iconCls: 'favorites',
                             layout: { type: 'card' },
                             items: [
+                                //{
+                                //    xtype: 'image',
+                                //    id: 'DealsDetailsTabPanel_Locations_StaticMap',
+                                //    centered: true,
+                                //    width: 320,
+                                //    height: '98%',
+                                //    style: 'background-color:gainsboro;border: 1px solid #BBBBBB;border-radius: 10px 10px 10px 10px;',
+                                //    src: '',
+                                //    flex: 1
+                                //}
                                 {
                                     xtype: 'image',
                                     id: 'DealsDetailsTabPanel_Locations_StaticMap',
@@ -393,40 +404,65 @@ Ext.define('Mobile.view.DealsResults', {
                             Ext.getCmp('DealsDetailsTabPanel_Menus_Carousel').setActiveItem(0);
                         }
 
-                        var geo = Ext.create('Ext.util.Geolocation', {
-                            autoUpdate: false,
-                            listeners: {
-                                locationupdate: function (geo) {
+                        var url = 'http://maps.googleapis.com/maps/api/staticmap?size=320x260';
 
-                                    var url = 'http://maps.googleapis.com/maps/api/staticmap?size=320x260';
+                        url = url + record.data.LocationsRollup;
 
-                                    url = url + record.data.LocationsRollup;
+                        console.log('Current Location: ' + Mobile.globalLat + ':' + Mobile.globalLon);
 
-                                    //console.log('Current Location: ' + geo.getLatitude() + ':' + geo.getLongitude());
+                        url = url + '&markers=color:blue%7Clabel:';
+                        url = url + 'CurrentLocation';
+                        url = url + '%7C';
+                        url = url + Mobile.globalLat;
+                        url = url + ',';
+                        url = url + Mobile.globalLon;
 
-                                    url = url + '&markers=color:blue%7Clabel:';
-                                    url = url + 'CurrentLocation';
-                                    url = url + '%7C';
-                                    url = url + geo.getLatitude();
-                                    url = url + ',';
-                                    url = url + geo.getLongitude();
+                        url = url + '&sensor=false';
+                        console.log(url);
+                        //alert(url);
 
-                                    url = url + '&sensor=false';
-                                    //console.log(url);
+                        var linkurl = "http://maps.google.com/maps?q=" + record.data.Address;
 
-                                    var locationLink = '<a href=\"' + url + '\" ><img src=\"' + url + '\" /></a>';
-                                    Ext.getCmp('DealsDetailsTabPanel_Locations_StaticMap').setHtml(locationLink);
-                                },
-                                locationerror: function (geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
-                                    if (bTimeout) {
-                                        alert('Timeout occurred.');
-                                    } else {
-                                        alert('Error occurred.');
-                                    }
-                                }
-                            }
-                        });
-                        geo.updateLocation();
+                        var locationLink = '<a href=\"' + linkurl + '\" target=\"blank\" ><img src=\"' + url + '\" /></a>';
+
+                        Ext.getCmp('DealsDetailsTabPanel_Locations_StaticMap').setHtml(locationLink);
+                        
+                        //var geo = Ext.create('Ext.util.Geolocation', {
+                        //    autoUpdate: false,
+                        //    listeners: {
+                        //        locationupdate: function (geo) {
+
+                        //            var url = 'http://maps.googleapis.com/maps/api/staticmap?size=320x260';
+
+                        //            url = url + record.data.LocationsRollup;
+
+                        //            console.log('Current Location: ' + geo.getLatitude() + ':' + geo.getLongitude());
+
+                        //            url = url + '&markers=color:blue%7Clabel:';
+                        //            url = url + 'CurrentLocation';
+                        //            url = url + '%7C';
+                        //            url = url + geo.getLatitude();
+                        //            url = url + ',';
+                        //            url = url + geo.getLongitude();
+
+                        //            url = url + '&sensor=false';
+                        //            console.log(url);
+                        //            alert(url);
+
+                        //            var locationLink = '<a href=\"' + url + '\" ><img src=\"' + url + '\" /></a>';
+
+                        //            Ext.getCmp('DealsDetailsTabPanel_Locations_StaticMap').setHtml(locationLink);
+                        //        },
+                        //        locationerror: function (geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
+                        //            if (bTimeout) {
+                        //                alert('Timeout occurred.');
+                        //            } else {
+                        //                alert('Error occurred.');
+                        //            }
+                        //        }
+                        //    }
+                        //});
+                        //geo.updateLocation();
 
                         Ext.getCmp('DealsPanels').setActiveItem(2);
                     }

@@ -281,7 +281,6 @@
     <Content Include="app\view\ListingsResultsTemplate.js" />
     <Content Include="app\view\ListingsSearch.js" />
     <Content Include="app\view\Main.js" />
-    <Content Include="build.xml" />
     <Content Include="index.html" />
     <Content Include="jquery-mobile\images\ajax-loader.png" />
     <Content Include="jquery-mobile\images\ajax-loader.gif" />
@@ -300,7 +299,6 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
-    <Content Include="packager.json" />
     <Content Include="resources\buttons\Automotive.png" />
     <Content Include="resources\buttons\AutomotiveOld.png" />
     <Content Include="resources\buttons\Beauty.png" />

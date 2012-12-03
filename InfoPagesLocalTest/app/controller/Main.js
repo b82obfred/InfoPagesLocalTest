@@ -43,11 +43,29 @@ Ext.define('Mobile.controller.Main', {
 
     init: function () {
         this.setHistory(this.getApplication().getHistory());
+        var geo = Ext.create('Ext.util.Geolocation', {
+            autoUpdate: false,
+            listeners: {
+                locationupdate: function (geo) {
+                    //alert('New Location: ' + geo.getLatitude() + ':' + geo.getLongitude());
+                    Mobile.globalLat = geo.getLatitude();
+                    Mobile.globalLon = geo.getLongitude()
+                },
+                locationerror: function (geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
+                    if (bTimeout) {
+                        alert('Location timeout occurred.');
+                    } else {
+                        alert('Location error occurred.');
+                    }
+                }
+            }
+        });
+        geo.updateLocation();
     },
 
     launch: function () {
         var id = $.jStorage.get("id");
-        var search = $.jStorage.get("search");
+        var search = $.jStorage.get("search");        
         if (!id) {
             //alert('init no jstorage id found');
         }

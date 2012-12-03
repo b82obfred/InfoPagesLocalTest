@@ -21,7 +21,7 @@ Ext.define('Mobile.controller.ListingsDirectory', {
             fields: ['Html', 'Search', 'DealsCount'],
             proxy: {
                 type: 'ajax',
-                url: './app/data/ListingsDirectory.json',
+                url: './app/data/ListingsDirectory.json'
             },
             autoLoad: true
         });

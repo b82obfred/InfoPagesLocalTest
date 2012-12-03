@@ -22,7 +22,7 @@
             method: 'get',
 
             reader: {
-                type: 'json',
+                type: 'json'
             }
         }
     }

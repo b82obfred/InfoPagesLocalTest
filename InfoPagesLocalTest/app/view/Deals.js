@@ -69,7 +69,7 @@
                 xtype: 'DealsSearch',
                 id: 'DealsSearch',
                 style: 'background-color:#1A5496;',
-                height: '30px',
+                height: '30px'
             },
             {
                 xtype: 'DealsPanels',
